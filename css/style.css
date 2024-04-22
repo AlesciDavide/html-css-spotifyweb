@@ -49,34 +49,43 @@ div.spotify_nav div:nth-child(2){
 }
 section.spotify_nav_position{
     position: fixed;
+    z-index: 2;
 }
 
 /* main upgrade fixed */
 
 .upgrade_line{
     position: relative;
+    z-index: 1;
+    
 }
 
 .upgrade_btn{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
     background-color: #080b12;
-    opacity: 0.9;
-    left: 180px;
+    opacity: 0.3;
+    position: fixed;
     right: 0;
+    left: 0;
 }
+
 .upgrade_btn > button{
     margin: 20px;
+    color: white;
+    
+
 }
 
 /* navbar main */
 
+
+
 section.all_music{
-    height: calc(100vh);
+    height: calc(100vh + 60px);
     background-color: #141922;
-    width: calc(100vw - 180px);
+    width: calc(100vw - 180px) ;
     position: relative;
     left: 180px;
 }
