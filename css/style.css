@@ -17,6 +17,11 @@ body{
     color: rgb(192, 192, 192);
 }
 
+.color_grey{
+    color: rgb(192, 192, 192);
+    font-size: 2rem;
+}
+
 li{
     list-style-type: none;
     color: rgb(221, 221, 221);
@@ -51,6 +56,10 @@ li > img{
     width: 180px;
     background-color: #000000;
 }
+.spotify_nav div{
+    overflow: scroll;
+}
+
 
 div.spotify_nav div > img{
     width: 80%;
@@ -58,7 +67,7 @@ div.spotify_nav div > img{
 }
 
 div.spotify_nav div ul:nth-child(2){
-    overflow: scroll;
+    padding-top: 20px;
 }
 
 div.spotify_nav div:nth-child(2){
@@ -151,15 +160,12 @@ div.all_music_list > h3{
 div.music_list{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: self-start;
     flex-wrap: wrap;
     padding: 20px 0 20px 0;
 }
+
 div.single_music{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: calc((100vw - 200px) / 6);
     color: white;
     padding-left: 15px;
@@ -168,10 +174,12 @@ div.single_music{
 div.single_music > h2{
     font-size: 1rem;
     padding-top: 5px;
+    text-align: center;
 }
 
 div.single_music > h3{
     font-size: .5rem;
+    text-align: center;
 }
 
 div.single_music > *{
@@ -327,7 +335,9 @@ section.footer{
     }
 
 
-
+    .Linea_canzone{
+        padding: 10px 0 0 0;
+    }
 
 
     /* nav bar */
@@ -370,6 +380,6 @@ section.footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 20px 0;
+        padding: 40px 0;
     }
 }
