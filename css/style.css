@@ -3,3 +3,96 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+li{
+    list-style-type: none;
+    color: rgb(221, 221, 221);
+    padding-bottom: 10px;
+}
+ul{
+    padding: 0 0 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+
+li > img{
+    width: 20px;
+}
+
+.spotify_nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 180px;
+    background-color: #000000;
+}
+
+div.spotify_nav div > img{
+    width: 80%;
+    padding: 10px;
+}
+
+div.spotify_nav div ul:nth-child(2){
+    overflow: scroll;
+}
+
+div.spotify_nav div:nth-child(2){
+    padding: 0 10px 10px 10px;
+}
+
+.header{
+    position: relative;
+}
+section.spotify_nav_position{
+    position: fixed;
+}
+
+/* main upgrade fixed */
+
+.upgrade_line{
+    position: relative;
+}
+
+.upgrade_btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    background-color: #080b12;
+    opacity: 0.9;
+    left: 180px;
+    right: 0;
+}
+.upgrade_btn > button{
+    margin: 20px;
+}
+
+/* navbar main */
+
+section.all_music{
+    height: calc(100vh);
+    background-color: #141922;
+    width: calc(100vw - 180px);
+    position: relative;
+    left: 180px;
+}
+
+nav.navbar_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+nav.navbar_main ul{
+    display: flex;
+    padding: 20px 0;
+}
+
+nav.navbar_main ul > li{
+    padding-right: 15px;
+}
