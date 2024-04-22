@@ -80,14 +80,13 @@ section.spotify_nav_position{
 
 /* navbar main */
 
-
-
 section.all_music{
     height: calc(100vh + 60px);
     background-color: #141922;
-    width: calc(100vw - 180px) ;
+    width: calc(100vw - 180px);
     position: relative;
     left: 180px;
+    overflow: scroll;
 }
 
 nav.navbar_main{
@@ -105,3 +104,77 @@ nav.navbar_main ul{
 nav.navbar_main ul > li{
     padding-right: 15px;
 }
+
+/* lista musica */
+
+div.all_music_list > h1{
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+div.music_list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.single_music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc((100vw - 200px) / 6);
+    color: white;
+    padding-left: 15px;
+}
+
+div.single_music > h2{
+    font-size: 1rem;
+}
+
+div.single_music > h3{
+    font-size: .5rem;
+}
+
+div.single_music > *{
+    padding-bottom: 10px;
+}
+
+div.single_music > img{
+    width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+    div.single_music{
+        width: calc((100vw - 200px) / 4);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.single_music{
+        width: calc((100vw - 200px) / 2);
+    }
+}
+
