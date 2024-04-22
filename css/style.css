@@ -26,7 +26,7 @@ li > img{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 180px;
     background-color: #000000;
 }
@@ -50,6 +50,12 @@ div.spotify_nav div:nth-child(2){
 section.spotify_nav_position{
     position: fixed;
     z-index: 2;
+}
+
+/*  spotify_nav_hamb */
+
+.spotify_nav_hamb{
+    display: none;
 }
 
 /* main upgrade fixed */
@@ -81,7 +87,7 @@ section.spotify_nav_position{
 /* navbar main */
 
 section.all_music{
-    height: calc(100vh + 60px);
+    height: calc(100vh - 60px);
     background-color: #141922;
     width: calc(100vw - 180px);
     position: relative;
@@ -94,10 +100,13 @@ nav.navbar_main{
     justify-content: center;
     align-items: center;
     padding: 60px;
+    font-size: .8rem;
 }
 
 nav.navbar_main ul{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px 0;
 }
 
@@ -178,3 +187,55 @@ div.single_music > img{
     }
 }
 
+@media screen and (max-width: 576px) {
+    div.single_music{
+        width: calc((100vw - 60px) / 2);
+    }
+
+
+
+
+
+    /* nav bar */
+    
+    .spotify_nav{
+        display: none;
+    }
+
+    .spotify_nav_hamb{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: calc(100vh - 60px);
+        width: 50px;
+        background-color: #000000;
+        padding-top: 5px;
+    }
+
+    .spotify_nav_hamb img{
+        width: 20px;
+    }
+
+    section.all_music{
+        height: calc(100vh - 60px);
+        background-color: #141922;
+        width: calc(100vw - 10px);
+        position: relative;
+        left: 50px;
+        overflow: scroll;
+
+}
+
+
+    nav.navbar_main{
+
+        padding: 60px 0 10px 0;
+    }
+    
+    nav.navbar_main ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+    }
+}
