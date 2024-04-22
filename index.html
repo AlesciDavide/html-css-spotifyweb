@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <title>spotifyweb</title>
 </head>
 <body>
@@ -19,7 +26,7 @@
                     </ul>
                     <ul>
                         <li>PLAYLIST</li>
-                        <li><i class="fa-solid fa-plus"></i> Crea Playlist</li>
+                        <li><img src="./img/" alt=""> Crea Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
@@ -30,9 +37,9 @@
                     </ul>
                 </div>
                 <div>
-                    <a href=""><i class="fa-regular fa-circle-down"></i> Installa app</a>
+                    <a href=""><img src="./img/download.svg" alt=""> Installa app</a>
                     <hr>
-                    <a href=""><i class="fa-duotone fa-circle-user"></i> John Doe</a>
+                    <a href=""><img src="./img/profile.svg" alt=""> John Doe</a>
                 </div>
             </div>
         </section>
@@ -82,36 +89,109 @@
                     <div class="single_music">
                         <img src="./img/metal_lifting.jpg" alt="">
                         <h2>Heavy Metal</h2>
-                        <h3>Subtitle</h3>
+                        <h3 class="color_dim_grey">Subtitle</h3>
                     </div>
                     <div class="single_music">
                         <img src="./img/metal_lifting.jpg" alt="">
                         <h2>Heavy Metal</h2>
-                        <h3>Subtitle</h3>
+                        <h3 class="color_dim_grey">Subtitle</h3>
                     </div>
                     <div class="single_music">
                         <img src="./img/metal_lifting.jpg" alt="">
                         <h2>Heavy Metal</h2>
-                        <h3>Subtitle</h3>
+                        <h3 class="color_dim_grey">Subtitle</h3>
                     </div>
                     <div class="single_music">
                         <img src="./img/metal_lifting.jpg" alt="">
                         <h2>Heavy Metal</h2>
-                        <h3>Subtitle</h3>
+                        <h3 class="color_dim_grey">Subtitle</h3>
                     </div>
                     <div class="single_music">
                         <img src="./img/metal_lifting.jpg" alt="">
                         <h2>Heavy Metal</h2>
-                        <h3>Subtitle</h3>
+                        <h3 class="color_dim_grey">Subtitle</h3>
                     </div>
                     <div class="single_music">
                         <img src="./img/metal_lifting.jpg" alt="">
                         <h2>Heavy Metal</h2>
-                        <h3>Subtitle</h3>
+                        <h3 class="color_dim_grey">Subtitle</h3>
                     </div>
+                </div>
+            </div>
+
+            <div class="all_music_list">
+                <h1>Creato Per John Doe</h1>
+                <h3 class="color_dim_grey">Più ascolti più accurati saranno i suggerimenti.</h3>
+                <div class="music_list">
+                    <div class="single_music">
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <h2>Heavy Metal</h2>
+                    </div>
+                    <div class="single_music">
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <h2>Heavy Metal</h2>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="all_music_list">
+                <h1>Artisti più popolari</h1>
+                <h3 class="color_dim_grey">Più ascolti più accurati saranno i suggerimenti.</h3>
+                <div class="music_list">
+                    <div class="single_music">
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <h2>Heavy Metal</h2>
+                    </div>
+                    <div class="single_music">
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <h2>Heavy Metal</h2>
+                    </div>
+                    
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <section class="footer">
+            <div class="playmusic_footer">
+                <article>
+                    <div><img src="./img/sinister.jpeg" alt=""></div>
+                    <div>
+                        <p class="color_white">Sinister</p>
+                        <p class="color_dim_grey">Brano Nome</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="Linea_canzone">
+                        <p>0:25</p>
+                        <span class="dimension_linea"><hr class="hr_live"><hr class="hr_nolive"></span>
+                        <p>4:35</p>
+                    </div>
+                </article>
+                <article>
+                        <div>
+                            <i class="fa-solid fa-list-ul"></i>
+                            <i class="fa-solid fa-display"></i>
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+                        <div class="Linea_canzone">
+                            <span class="dimension_linea_destra"><hr class="hr_live"><hr class="hr_nolive"></span>
+                        </div>
+                </article>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

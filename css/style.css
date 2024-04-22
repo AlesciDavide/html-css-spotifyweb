@@ -4,18 +4,39 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.color_white{
+    color: white;
+}
+
+.color_dim_grey{
+    font-size: .5rem;
+    color: rgb(192, 192, 192);
+}
+
 li{
     list-style-type: none;
     color: rgb(221, 221, 221);
     padding-bottom: 10px;
+    font-size: .8rem;
 }
 ul{
     padding: 0 0 10px 10px;
 }
 
+i{
+    color: white;
+}
+
 a{
     text-decoration: none;
     color: rgb(221, 221, 221);
+}
+a > img{
+    width: 15px;
 }
 
 li > img{
@@ -26,7 +47,7 @@ li > img{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 78px);
     width: 180px;
     background-color: #000000;
 }
@@ -63,7 +84,7 @@ section.spotify_nav_position{
 .upgrade_line{
     position: relative;
     z-index: 1;
-    
+    opacity: 0.3;
 }
 
 .upgrade_btn{
@@ -71,7 +92,6 @@ section.spotify_nav_position{
     justify-content: flex-end;
     align-items: center;
     background-color: #080b12;
-    opacity: 0.3;
     position: fixed;
     right: 0;
     left: 0;
@@ -80,7 +100,12 @@ section.spotify_nav_position{
 .upgrade_btn > button{
     margin: 20px;
     color: white;
-    
+    background-color: #080b12;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    opacity: 1;
 
 }
 
@@ -99,8 +124,8 @@ nav.navbar_main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
-    font-size: .8rem;
+    padding-top: 60px;
+    font-size: .7rem;
 }
 
 nav.navbar_main ul{
@@ -118,15 +143,21 @@ nav.navbar_main ul > li{
 
 div.all_music_list > h1{
     color: white;
-    padding-bottom: 20px;
     padding-left: 20px;
 }
+
+div.all_music_list > h3{
+    color: rgb(155, 155, 155);
+    padding: 10px 0 20px 20px;
+}
+
 
 div.music_list{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    padding: 20px 0 20px 0;
 }
 div.single_music{
     display: flex;
@@ -156,17 +187,97 @@ div.single_music > img{
 
 
 
+/* footer */
+
+footer{
+    position: relative;
+}
+
+section.footer{
+    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: max-content;
+    width: 100vw;
+    background-color: #282828;
+    z-index: 3;
+}
+
+.playmusic_footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.playmusic_footer div > img{
+    width: 40px;
+}
+
+.playmusic_footer article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% / 3) -50px)
+}
+
+.playmusic_footer article:nth-child(1) > div{
+    align-self: center;
+    padding-right: 10px;
+}
+
+.playmusic_footer article:nth-child(1) > div i{
+    color: #5a5a5a;
+}
+
+.hr_live{
+    width: 30%;
+    border: 2px solid #c1c1c1;
+    margin-left: 10px;
+}
+
+.hr_nolive{
+    width: 70%;
+    border: 2px solid #5a5a5a;
+    margin-right: 10px;
+}
 
 
+.playmusic_footer article:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 10px;
+}
 
+.Linea_canzone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
 
+.dimension_linea{
+    width: 400px;
+    display: flex;
+}
 
+.playmusic_footer article:nth-child(2) div > i,
+.playmusic_footer article:nth-child(3) div > i{
+    padding-right: 15px;
+    font-size: 1.1rem;
+}
 
-
-
-
-
-
+.dimension_linea_destra{
+    width: 150px;
+    display: flex;
+}
 
 
 
@@ -179,11 +290,35 @@ div.single_music > img{
     div.single_music{
         width: calc((100vw - 200px) / 4);
     }
+    .dimension_linea{
+        width: 300px;
+    }
+    .dimension_linea_destra{
+        width: 75px;
+    }
+    .playmusic_footer article:nth-child(2) div > i,
+    .playmusic_footer article:nth-child(3) div > i{
+    padding-right: 8px;
+}
 }
 
 @media screen and (max-width: 768px) {
     div.single_music{
         width: calc((100vw - 200px) / 2);
+    }
+    .dimension_linea{
+        width: 150px;
+    }
+    .dimension_linea_destra{
+        width: 50px;
+    }
+    .playmusic_footer article:nth-child(2) div > i,
+    .playmusic_footer article:nth-child(3) div > i{
+    padding-right: 5px;
+    font-size: .8rem;
+}
+    div.single_music{
+        padding-right: 15px;
     }
 }
 
@@ -219,7 +354,7 @@ div.single_music > img{
     section.all_music{
         height: calc(100vh - 60px);
         background-color: #141922;
-        width: calc(100vw - 10px);
+        width: calc(100vw - 60px);
         position: relative;
         left: 50px;
         overflow: scroll;
