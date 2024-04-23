@@ -212,6 +212,7 @@ div.single_music{
     width: calc((100vw - 200px) / 6);
     color: white;
     padding-left: 15px;
+    position: relative;
 }
 
 div.single_music > h2{
@@ -230,12 +231,38 @@ div.single_music > *{
 }
 
 div.single_music > img{
-    width: 95%;
+    width: 100%;
 }
 
 .img_rotonda{
     border-radius: 50%;
 }
+
+
+/* test hover opacità e play */
+
+
+div.single_music .Hover_play_opacity{
+    width: calc((100vw - 285px) / 6);
+    aspect-ratio: 1 / 1;
+    font-size: 3rem;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+}
+
+div.single_music .opacity_cirlce{
+    border-radius: 50%;
+}
+
+div.single_music:hover > .Hover_play_opacity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+/* test hover opacità e play */
 
 /* footer */
 
@@ -303,6 +330,10 @@ section.footer{
     margin-left: 10px;
 }
 
+.hr_live:hover{
+    border: 2px solid green;
+}
+
 .hr_nolive{
     width: 70%;
     border: 2px solid #5a5a5a;
@@ -328,7 +359,7 @@ section.footer{
 }
 
 .dimension_linea{
-    width: 400px;
+    width: 450px;
     display: flex;
 }
 
@@ -351,7 +382,6 @@ section.footer{
 
 
 
-
 /* media query */
 
 @media screen and (max-width: 992px) {
@@ -367,7 +397,16 @@ section.footer{
     .playmusic_footer article:nth-child(2) div > i,
     .playmusic_footer article:nth-child(3) div > i{
     padding-right: 8px;
-}
+    }
+    div.single_music .Hover_play_opacity{
+        width: calc((100vw - 257px) / 4);
+        aspect-ratio: 1 / 1;
+        font-size: 3rem;
+        display: none;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -384,9 +423,19 @@ section.footer{
     .playmusic_footer article:nth-child(3) div > i{
     padding-right: 5px;
     font-size: .8rem;
-}
+    }
     div.single_music{
         padding-right: 15px;
+    }
+
+    div.single_music .Hover_play_opacity{
+        width: calc((100vw - 259px) / 2);
+        aspect-ratio: 1 / 1;
+        font-size: 3rem;
+        display: none;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
     }
 }
 
@@ -442,5 +491,19 @@ section.footer{
         flex-wrap: wrap;
         justify-content: center;
         padding: 40px 0;
+    }
+
+    .playmusic_footer article:nth-child(2) div > i:nth-child(3):hover{
+        font-size: 1rem;
+    }
+
+    div.single_music .Hover_play_opacity{
+        width: calc((100vw - 120px) / 2);
+        aspect-ratio: 1 / 1;
+        font-size: 3rem;
+        display: none;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
     }
 }
