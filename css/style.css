@@ -24,7 +24,7 @@ body{
 
 li{
     list-style-type: none;
-    color: rgb(221, 221, 221);
+    color: #787b7f;
     padding-bottom: 10px;
     font-size: .8rem;
 }
@@ -57,7 +57,7 @@ li > img{
     background-color: #000000;
 }
 .spotify_nav div{
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 
@@ -74,12 +74,43 @@ div.spotify_nav div:nth-child(2){
     padding: 0 10px 10px 10px;
 }
 
+.margin_user{
+    margin: 5px 0 8px 0;
+}
+
+div.spotify_nav div:nth-child(2) > a:first-child{
+    color: #787b7f;
+}
+
+div.spotify_nav div:nth-child(2) > a:first-child:hover{
+    color: white;
+    cursor: pointer;
+}
+
+div.spotify_nav div:nth-child(2) > a:last-child img{
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 20px;
+}
+
+div.spotify_nav div:nth-child(2) > a:last-child{
+    display: flex;
+    
+}
+
 .header{
     position: relative;
 }
 section.spotify_nav_position{
     position: fixed;
     z-index: 2;
+}
+
+
+div.spotify_nav div ul > li:hover{
+    color: white;
+    cursor: pointer;
 }
 
 /*  spotify_nav_hamb */
@@ -114,6 +145,13 @@ section.spotify_nav_position{
     border: 1px solid white;
 }
 
+.upgrade_btn > button:hover{
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px;
+}
+
 /* navbar main */
 
 section.all_music{
@@ -142,6 +180,11 @@ nav.navbar_main ul{
 
 nav.navbar_main ul > li{
     padding-right: 15px;
+}
+
+nav.navbar_main ul > li:hover{
+    color: white;
+    cursor: pointer;
 }
 
 /* lista musica */
@@ -218,6 +261,7 @@ section.footer{
     flex-direction: row;
     align-items: center;
     padding: 5px;
+    max-height: 78.8px;
 }
 
 .playmusic_footer div > img{
@@ -236,8 +280,21 @@ section.footer{
     padding-right: 10px;
 }
 
+.playmusic_footer article:nth-child(1) > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+.text_decoration:hover{
+    text-decoration: underline;
+}
+
 .playmusic_footer article:nth-child(1) > div i{
     color: #5a5a5a;
+}
+
+.playmusic_footer article:nth-child(1) > div i:hover{
+    color: white;
 }
 
 .hr_live{
@@ -279,6 +336,10 @@ section.footer{
 .playmusic_footer article:nth-child(3) div > i{
     padding-right: 15px;
     font-size: 1.1rem;
+}
+
+.playmusic_footer article:nth-child(2) div > i:nth-child(3):hover{
+    font-size: 1.5rem;
 }
 
 .dimension_linea_destra{
