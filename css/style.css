@@ -82,6 +82,8 @@ div.spotify_nav div:nth-child(2) > a:first-child{
     color: #787b7f;
 }
 
+
+
 div.spotify_nav div:nth-child(2) > a:first-child:hover{
     color: white;
     cursor: pointer;
@@ -152,6 +154,12 @@ div.spotify_nav div ul > li:hover{
     margin: 15px;
 }
 
+.hr_green{
+    width: 40%;
+    margin: 0 auto;
+    color: #adff2f;
+    margin-top: 5px;
+}
 /* navbar main */
 
 section.all_music{
@@ -333,7 +341,7 @@ section.footer{
 }
 
 .hr_live:hover{
-    border: 2px solid green;
+    border: 2px solid #adff2f;
     cursor: pointer;
 }
 
