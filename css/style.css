@@ -260,6 +260,7 @@ div.single_music:hover > .Hover_play_opacity{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }  
 
 /* test hover opacità e play */
@@ -322,6 +323,7 @@ section.footer{
 
 .playmusic_footer article:nth-child(1) > div i:hover{
     color: white;
+    cursor: pointer;
 }
 
 .hr_live{
@@ -332,6 +334,7 @@ section.footer{
 
 .hr_live:hover{
     border: 2px solid green;
+    cursor: pointer;
 }
 
 .hr_nolive{
@@ -340,6 +343,37 @@ section.footer{
     margin-right: 10px;
 }
 
+div.dimension_linea .fa-solid{
+    display: none;
+}
+
+.circle_green{
+    position: absolute;
+    color: white;
+    top: 12px;
+    left: 170px;
+    display: none;
+}
+
+.hr_live:hover + .circle_green{
+    display: block;
+}
+
+div.dimension_linea_destra .fa-solid{
+    display: none;
+}
+
+.circle_green_min{
+    position: absolute;
+    color: white;
+    top: 4px;
+    left: 50px;
+    display: none;
+}
+
+.hr_live:hover + .circle_green_min{
+    display: block;
+}
 
 .playmusic_footer article:nth-child(2){
     display: flex;
@@ -356,11 +390,13 @@ section.footer{
     align-items: center;
     flex-direction: row;
     padding: 10px;
+    position: relative;
 }
 
 .dimension_linea{
     width: 450px;
     display: flex;
+    
 }
 
 .playmusic_footer article:nth-child(2) div > i,
@@ -371,13 +407,13 @@ section.footer{
 
 .playmusic_footer article:nth-child(2) div > i:nth-child(3):hover{
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .dimension_linea_destra{
     width: 150px;
     display: flex;
 }
-
 
 
 
@@ -406,6 +442,16 @@ section.footer{
         background-color: rgba(0,0,0,0.5);
         position: absolute;
         top: 0;
+    }
+
+    .circle_green{
+        left: 125px;
+    }
+
+    .circle_green_min{
+        top: 4px;
+        left: 27px;
+        font-size: .5rem;
     }
 }
 
@@ -436,6 +482,17 @@ section.footer{
         background-color: rgba(0,0,0,0.5);
         position: absolute;
         top: 0;
+    }
+
+    .circle_green{
+        top: 14px;
+        left: 85px;
+    }
+
+    .circle_green_min{
+        top: 6px;
+        left: 27px;
+        font-size: .5rem;
     }
 }
 
@@ -497,6 +554,11 @@ section.footer{
         font-size: 1rem;
     }
 
+    .playmusic_footer article:nth-child(3) div > i{
+        font-size: .5rem;
+        padding-right: 5px;
+    }
+
     div.single_music .Hover_play_opacity{
         width: calc((100vw - 120px) / 2);
         aspect-ratio: 1 / 1;
@@ -505,5 +567,16 @@ section.footer{
         background-color: rgba(0,0,0,0.5);
         position: absolute;
         top: 0;
+    }
+
+    .circle_green{
+        top: 14px;
+        left: 73px;
+    }
+
+    .circle_green_min{
+        top: 8px;
+        left: 15px;
+        font-size: .3rem;
     }
 }
